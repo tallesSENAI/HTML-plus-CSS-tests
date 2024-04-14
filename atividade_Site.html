@@ -2,9 +2,10 @@
 <head>
     <style>
         /* Estilo para as imagens na lista */
-        .car-image {
-            display: inline-block; /* Torna as imagens inline */
+        .car-image { 
             margin-right: 20px; /* Adiciona margem à direita para espaçamento */
+            max-width: 100%; 
+            height: auto;
         }
 
         /* Limpa a margem padrão do body */
@@ -16,6 +17,13 @@
             color: green; 
             font-size: 14;
             text-decoration: none;
+        }
+
+        .paragraph{
+            display: block;
+            text-align: right;
+            background-color: orange;
+            margin-left: 900px;
         }
     </style>
 </head>
@@ -47,6 +55,14 @@
         </header>
     </section>
 
+    <div class="paragraph">After a 20 year pause, 
+        Toyota released the fifth-generation Supra in 2019 
+         but it proved to be a letdown for hardcore 
+         fourth-generation Supra fans. 
+         Toyota had collaborated with BMW on the Mk5, and incorporated a BMW-sourced engine – not the Toyota 2JZ 
+         engine that had become had become legendary in the market.
+    </div>
+
     <section style="text-align: center; display: block;"> <!--SECTION TELLING SOME SPECIFICATIONS ABOUT THE SUPRA´S ENGINE-->
         <p>
             Many view the old Supra engine as the best inline-6 ever made.<br />
@@ -69,13 +85,41 @@
             <a div class="link" href="https://www.youtube.com/watch?v=UPAZq74amLI" target="_blank">Check out one of the most BRUTAL burnouts performed by a highly modified 2JZ-GTE Supra!</a>
         </aside>
     </section>
+    
+ 
 
-    <section style="text-align: right; display: block;">
-        <aside>
+    <section style="display: block;"> <!--LISTS SECTION-->
+        
+            <p></p>
+            <ul style="border: 5px solid blue; display: inline-block;">
+                <li class="car-image">
+                    <img src="https://i.pinimg.com/originals/cd/a7/d7/cda7d7020562f8b3cfaa981304777457.jpg"
+                    width="200"
+                    height="150"/>
+                </li><!--ITENS DA LISTA--> 
 
-        <p>Every Supra generation:</p>
-        <ol> <!--LISTA COM ORDEM-->
-            <li class="car-image" style="font-size: 8;">
+                <li class="car-image">
+                    <img src="https://i.pinimg.com/originals/7c/46/49/7c464982d4eee0fcab32829eb159669d.jpg"
+                    width="200"
+                    height="150"/>
+                </li><!--ITENS DA LISTA--> 
+
+                <li class="car-image">
+                    <img src="https://i.pinimg.com/originals/8e/20/8d/8e208d9f37cb25c8de5ae130c78911d1.jpg"
+                    width="200"
+                    height="150"/>
+                </li><!--ITENS DA LISTA--> 
+
+                <li class="car-image">
+                    <img src="https://i.ytimg.com/vi/AAUXNZrBNf8/sddefault.jpg"
+                    width="200"
+                    height="150"/>
+                </li><!--ITENS DA LISTA--> 
+            </ul>
+
+        <span>
+        <ol style="display: inline-block; border: 5px dotted red; margin-right: 100;"> <!--LISTA COM ORDEM-->
+            <li class="car-image">
                 <img src="https://hips.hearstapps.com/hmg-prod/images/1998001-1979-celica-supra-1-1607614652.jpg?crop=1.00xw:0.847xh;0,0.147xh&resize=640:*"
                 width="200"
                 height="150"/>
@@ -106,10 +150,16 @@
             </li><!--ITENS DA LISTA--> 
 
         </ol> <!--LISTA SEM ORDEM-->
-        </aside>
+        </span>
+
     </section>
 
-    <footer style="background-color: grey;">
+    <section><!--PARAGRAPHS SIDE By SIDE-->
+        <p style="display: inline-block;">Different Supra MK4 builds ↑</p>
+        <p style="display: inline-block; padding-left: 100;">All the generations of the Supra ↑</p>
+    </section>
+
+    <footer style="background-color: grey; text-align: center; border: 5px dotted green;">
         References:
         <a div class="link" style="color: blue;" href="https://www.roadandtrack.com/car-culture/a34921295/toyota-supra-buyers-guide/">https://www.roadandtrack.com/car-culture/a34921295/toyota-supra-buyers-guide/</a>
         
